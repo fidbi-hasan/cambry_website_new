@@ -3,14 +3,17 @@
 import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 
-const supportedIELTSInfoFields = new Set(
-    prisma._runtimeDataModel.models.IELTSInfo?.fields.map((f) => f.name) ?? []
-);
+const supportedIELTSInfoFields = new Set([
+    "testProvider", "offeringType", "testType", "moduleType", "description", 
+    "fee", "venue", "duration", "classMode", "targetScore", "seats", 
+    "requirements", "nextDate", "registrationOpenUntil", "ctaLabel", 
+    "ctaUrl", "notes", "imageUrl", "isActive"
+]);
 
 function pickSupportedIELTSFields(data: Record<string, unknown>) {
     return Object.fromEntries(
         Object.entries(data).filter(([key, value]) => supportedIELTSInfoFields.has(key) && value !== undefined)
-    );
+    ) as any;
 }
 
 export async function getIELTSInfo() {

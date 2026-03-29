@@ -4,14 +4,16 @@ import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 import { LeadStatus } from "@prisma/client";
 
-const supportedLeadFields = new Set(
-    prisma._runtimeDataModel.models.Lead?.fields.map((f) => f.name) ?? []
-);
+const supportedLeadFields = new Set([
+    "name", "email", "phone", "desiredCountry", "testPreference", 
+    "sourcePage", "programInterest", "message", "status", "crmNotes", 
+    "utmSource", "utmMedium", "utmCampaign", "utmContext"
+]);
 
 function pickSupportedLeadFields(data: Record<string, unknown>) {
     return Object.fromEntries(
         Object.entries(data).filter(([key, value]) => supportedLeadFields.has(key) && value !== undefined)
-    );
+    ) as any;
 }
 
 export async function getLeads() {
