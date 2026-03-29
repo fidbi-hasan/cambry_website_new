@@ -1,5 +1,6 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -60,8 +61,8 @@ export default function Navbar({ countries = [] }: { countries?: { name: string,
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${scrolled
-                    ? "bg-[#0A1628]/85 backdrop-blur-2xl border-b border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.4)] py-1"
-                    : "bg-transparent py-3"
+                ? "bg-[#0A1628]/85 backdrop-blur-2xl border-b border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.4)] py-1"
+                : "bg-transparent py-3"
                 }`}
         >
             <nav className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">

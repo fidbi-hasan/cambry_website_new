@@ -152,9 +152,9 @@ export default async function HomePage() {
                         {/* Student image alongside cards */}
                         <FadeIn direction="left" delay={0.2} className="hidden lg:block">
                             <div className="relative w-[320px] h-[480px] rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.12)]">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=640&q=80" 
-                                    alt="International students celebrating on campus" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=640&q=80"
+                                    alt="International students celebrating on campus"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-transparent" />
@@ -374,9 +374,9 @@ export default async function HomePage() {
 
                             {/* Student image strip */}
                             <div className="mt-10 rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.08)] hidden sm:block">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=640&q=80" 
-                                    alt="International students studying together on campus" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=640&q=80"
+                                    alt="International students studying together on campus"
                                     className="w-full h-48 object-cover"
                                 />
                             </div>
@@ -405,27 +405,27 @@ export default async function HomePage() {
 
             {/* ===== TESTIMONIALS (DARK) ===== */}
             <TestimonialsCarousel testimonials={testimonials.length > 0 ? testimonials : [
-                { 
-                    studentName: "Rahul Sharma", 
-                    studentCourse: "MSc Data Science", 
-                    universityName: "Imperial College London", 
-                    targetCountry: "UK", 
+                {
+                    studentName: "Rahul Sharma",
+                    studentCourse: "MSc Data Science",
+                    universityName: "Imperial College London",
+                    targetCountry: "UK",
                     quote: "Cambry made my UK dream possible. The team offered end-to-end support, from university selection to visa guidance. Their precision and dedication were truly impressive.",
                     imageUrl: "https://images.unsplash.com/photo-1544652478-6653e09f18a2?q=80&w=800"
                 },
-                { 
-                    studentName: "Amara Khan", 
-                    studentCourse: "BEng Mechanical", 
-                    universityName: "University of Toronto", 
-                    targetCountry: "Canada", 
+                {
+                    studentName: "Amara Khan",
+                    studentCourse: "BEng Mechanical",
+                    universityName: "University of Toronto",
+                    targetCountry: "Canada",
                     quote: "I received a fast-track offer and a CAD 10,000 scholarship thanks to my counselor at Cambry. They understood my profile perfectly and suggested the best possible match.",
                     imageUrl: "https://images.unsplash.com/photo-1590518712792-74737d6e467d?q=80&w=800"
                 },
-                { 
-                    studentName: "Arjun Das", 
-                    studentCourse: "MBA Global Management", 
-                    universityName: "University of Melbourne", 
-                    targetCountry: "Australia", 
+                {
+                    studentName: "Arjun Das",
+                    studentCourse: "MBA Global Management",
+                    universityName: "University of Melbourne",
+                    targetCountry: "Australia",
                     quote: "Expert visa guidance and genuine care for students' success. I felt confident throughout the entire application process. Highly recommended for any study abroad aspirant.",
                     imageUrl: "https://images.unsplash.com/photo-1627551776582-591629ed324d?q=80&w=800"
                 },
@@ -523,7 +523,7 @@ export default async function HomePage() {
                                 }
                             ].map((acc, index) => (
                                 <div key={index} className="group rounded-xl overflow-hidden flex flex-col h-full bg-white/40 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-white/60 hover:shadow-[0_24px_50px_rgba(0,0,0,0.12)] hover:border-white transition-all duration-500 hover:-translate-y-2">
-                                    
+
                                     {/* Top Half: Glassy Logo Display */}
                                     <div className="flex-1 min-h-[160px] flex items-center justify-center p-8 relative z-10 transition-colors duration-500 group-hover:bg-white/50">
                                         <img src={acc.logo} alt={acc.name} className="max-w-[140px] max-h-[80px] object-contain group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] drop-shadow-sm" />
@@ -533,7 +533,7 @@ export default async function HomePage() {
                                     <div className="p-6 sm:p-8 flex-shrink-0 transition-all duration-500 relative overflow-hidden flex flex-col justify-end min-h-[170px]" style={{ backgroundColor: acc.color }}>
                                         {/* Abstract background highlight */}
                                         <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-                                        
+
                                         <div className="relative z-10 w-full mb-3">
                                             <span className="inline-block px-3 py-1 bg-white/20 text-white rounded text-[10px] font-bold uppercase tracking-[0.15em] backdrop-blur-md border border-white/10">
                                                 {acc.role}
@@ -580,8 +580,8 @@ export default async function HomePage() {
                 {/* Full-width dual-row marquee */}
                 <div className="mt-2">
                     <UniversityMarquee universities={universities.length > 0
-                        ? universities.map(u => ({ 
-                            name: u.name, 
+                        ? universities.map(u => ({
+                            name: u.name,
                             imageUrl: u.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(u.name)}&background=f1f5f9&color=334155&size=128&font-size=0.33&bold=true`,
                             country: u.country.name,
                         }))
