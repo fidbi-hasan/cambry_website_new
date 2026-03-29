@@ -1,0 +1,30 @@
+University Image Audit:
+[Italy] Politecnico di Milano: https://images.unsplash.com/photo-1520440229-6469a149ac59?w=800
+[Italy] Sapienza University of Rome: https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800
+[Malta] Malta College of Arts, Science and Technology (MCAST): https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800
+[Finland] Aalto University: https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800
+[Finland] University of Helsinki: https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=800
+[United Kingdom] University of Oxford: https://ui-avatars.com/api/?name=University%20of%20Oxford&background=f8fafc&color=0f172a&size=512&font-size=0.35&bold=true
+[Cyprus] Eastern Mediterranean University: https://images.unsplash.com/photo-1562774053-701939374585?w=800
+[Malta] University of Malta: https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?w=800
+[Cyprus] University of Cyprus: https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800
+[United Kingdom] Imperial College London: https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=800
+[United Kingdom] University of Leeds: https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800
+[Australia] University of Sydney: https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800
+[Australia] University of Melbourne: https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800
+[Australia] Deakin University: https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?w=800
+[Canada] University of Toronto: https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800
+[Canada] University of British Columbia: https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800
+[Malaysia] University of Malaya: https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800
+[Malaysia] UCSI University: https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800
+[Malaysia] Taylor's University: https://images.unsplash.com/photo-1562774053-701939374585?w=800
+[New Zealand] University of Auckland: https://images.unsplash.com/photo-1469521669194-babb45599def?w=800
+[New Zealand] University of Otago: https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800
+[New Zealand] Victoria University of Wellington: https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800
+[South Korea] Seoul National University: https://images.unsplash.com/photo-1548115184-bc6544d06a58?w=800
+[Japan] University of Tokyo: https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800
+[United Kingdom] University of Glasgow: https://ui-avatars.com/api/?name=University%20of%20Glasgow&background=f8fafc&color=0f172a&size=512&font-size=0.35&bold=true
+[Canada] Conestoga College: https://ui-avatars.com/api/?name=Conestoga%20College&background=f8fafc&color=0f172a&size=512&font-size=0.35&bold=true
+[Japan] Osaka University: https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800
+[South Korea] Korea University: https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800
+[United Kingdom] University of Birmingham: https://ui-avatars.com/api/?name=University%20of%20Birmingham&background=f8fafc&color=0f172a&size=512&font-size=0.35&bold=true
