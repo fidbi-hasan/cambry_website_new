@@ -9,6 +9,7 @@ import TrustBanner from "@/components/TrustBanner";
 import ScholarshipSpotlight from "@/components/ScholarshipSpotlight";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 
 export const metadata: Metadata = {
     title: "Study Destinations | Cambry International Admission Centre",
@@ -38,11 +39,14 @@ export default async function DestinationsPage() {
             <PageHero
                 badge="Explore the World"
                 badgeIcon={Globe}
-                title={<>Study <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Destinations</span></>}
+                title={<>Study <HighlightCircle color="var(--accent)">Destinations</HighlightCircle></>}
                 subtitle="Discover world-class education opportunities across top destination countries. Your dream university is waiting."
                 backgroundImage="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?w=1920&q=80"
                 backgroundAlt="World Map Destinations"
                 cta={{ label: "Book Free Consultation", href: "/contact" }}
+                isSplit={true}
+                mainImage="https://images.unsplash.com/photo-1523050335392-93851179ae2c?w=800"
+                stats={["success", "scholarship"]}
             />
 
             {/* 2. Trust Banner */}

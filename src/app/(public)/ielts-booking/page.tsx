@@ -9,6 +9,7 @@ import PageHero from "@/components/PageHero";
 import TrustBanner from "@/components/TrustBanner";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 
 export const metadata: Metadata = {
     title: "IELTS & PTE Exams + Course Registrations | Cambry International Admission Centre",
@@ -25,11 +26,14 @@ export default async function IELTSBookingPage() {
             <PageHero
                 badge="Test Preparation"
                 badgeIcon={CalendarCheck}
-                title={<>IELTS & PTE <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Registration</span></>}
+                title={<>IELTS & PTE <HighlightCircle color="var(--accent)">Registration</HighlightCircle></>}
                 subtitle="Register for IELTS and PTE exams, plus online/offline preparation courses with complete guidance from our team."
                 backgroundImage="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800"
                 backgroundAlt="Students taking test"
                 cta={{ label: "Enquire Now", href: "#enquiry" }}
+                isSplit={true}
+                stats={["students", "success"]}
             />
 
             {/* 2. Trust */}

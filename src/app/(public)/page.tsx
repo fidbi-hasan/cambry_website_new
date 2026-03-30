@@ -18,6 +18,7 @@ import UrgencyCTA from "@/components/UrgencyCTA";
 import UniversityFinder from "@/components/UniversityFinder";
 import AnnouncementMarquee from "@/components/AnnouncementMarquee";
 import { FadeIn, StaggerContainer, StaggerItem, HoverCard } from "@/components/MotionWrappers";
+import { HighlightUnderline } from "@/components/HeroDecoration";
 
 export default async function HomePage() {
     let universities: Awaited<ReturnType<typeof getTopUniversities>> = [];
@@ -79,30 +80,22 @@ export default async function HomePage() {
         <>
             {/* ===== HERO (DARK) ===== */}
             <PageHero
-                badge="Trusted by 500+ Students Worldwide"
+                badge="Trusted by 5,000+ Students Worldwide"
                 badgeIcon={GraduationCap}
-                title={<>Your Global Future<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400">Starts Here</span></>}
+                title={
+                    <>
+                        Your Global Future<br />
+                        <HighlightUnderline color="var(--accent)">Starts Here</HighlightUnderline>
+                    </>
+                }
                 subtitle="Cambry is your trusted International Admission Centre. We guide you from course selection to visa approval across top universities in the UK, Australia, Canada, Malaysia & New Zealand."
                 backgroundImage="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800"
                 backgroundAlt="Students on university campus"
                 cta={{ label: "Book Free Consultation", href: "/contact" }}
-            >
-                {/* Floating stats */}
-                <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 w-full max-w-3xl mx-auto">
-                    {[
-                        { value: "500+", label: "Students Placed", icon: Users },
-                        { value: "50+", label: "Partner Universities", icon: GraduationCap },
-                        { value: "11", label: "Countries", icon: Globe },
-                        { value: "98%", label: "Visa Success", icon: Award },
-                    ].map((stat) => (
-                        <div key={stat.label} className="bg-white/[0.06] backdrop-blur-xl border border-white/[0.08] rounded-lg px-4 py-5 text-center hover:bg-white/[0.1] transition-colors duration-300">
-                            <stat.icon className="w-5 h-5 text-amber-400 mx-auto mb-2" />
-                            <p className="text-2xl font-extrabold text-white">{stat.value}</p>
-                            <p className="text-[11px] text-blue-200/60 font-semibold uppercase tracking-widest mt-1">{stat.label}</p>
-                        </div>
-                    ))}
-                </div>
-            </PageHero>
+                isSplit={true}
+                stats={["students", "success", "rating"]}
+            />
 
             {/* ===== ANNOUNCEMENT MARQUEE (DARK STRIP) ===== */}
             <AnnouncementMarquee announcements={announcements} />

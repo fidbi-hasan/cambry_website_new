@@ -6,6 +6,7 @@ import PageHero from "@/components/PageHero";
 import TrustBanner from "@/components/TrustBanner";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 import { getFaqs } from "@/actions/faqs";
 
 export const metadata: Metadata = {
@@ -25,10 +26,13 @@ export default async function ContactPage() {
             <PageHero
                 badge="We're Here to Help"
                 badgeIcon={MessageCircle}
-                title={<><span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Contact</span> Us</>}
+                title={<><HighlightCircle color="var(--accent)">Contact</HighlightCircle> Us</>}
                 subtitle="Ready to start your study abroad journey? Get in touch with our expert counselors for a free consultation."
                 backgroundImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800"
                 backgroundAlt="Customer support team"
+                isSplit={true}
+                stats={["rating", "support"]}
             />
 
             {/* 2. Trust */}

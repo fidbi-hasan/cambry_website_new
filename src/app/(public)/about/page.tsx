@@ -7,6 +7,7 @@ import TrustBanner from "@/components/TrustBanner";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 import { getFeaturedTestimonials } from "@/actions/testimonials";
 import { getCounselors } from "@/actions/counselors";
 import { getFaqs } from "@/actions/faqs";
@@ -34,10 +35,13 @@ export default async function AboutPage() {
             <PageHero
                 badge="Who We Are"
                 badgeIcon={Users}
-                title={<>About <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Cambry</span></>}
+                title={<>About <HighlightCircle color="var(--accent)">Cambry</HighlightCircle></>}
                 subtitle="Your trusted International Admission Centre, dedicated to transforming study abroad dreams into reality since 2018."
-                backgroundImage="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&q=80"
+                backgroundImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
                 backgroundAlt="Students collaborating"
+                isSplit={true}
+                stats={["students", "success", "rating"]}
             />
 
             {/* 2. Trust */}

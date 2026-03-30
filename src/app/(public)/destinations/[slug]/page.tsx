@@ -10,6 +10,7 @@ import TrustBanner from "@/components/TrustBanner";
 import ScholarshipSpotlight from "@/components/ScholarshipSpotlight";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
@@ -73,19 +74,23 @@ export default async function CountryDetailPage({ params }: { params: Promise<{ 
         <>
             {/* 1. Hero */}
             <PageHero
-                badge="Destinations"
+                badge="Premium Destinations"
                 badgeIcon={MapPin}
-                title={<>Study in <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">{country.name}</span>
-                    {flagUrl && flagUrl.startsWith('http') ? (
-                        <img src={flagUrl} alt={`${country.name} flag`} className="w-16 h-12 md:w-24 md:h-16 rounded-md shadow-lg object-cover inline-block ml-4" />
-                    ) : flagUrl ? (
-                        <span className="text-4xl md:text-6xl inline-block ml-4">{flagUrl}</span>
-                    ) : null}
-                </>}
-                subtitle={country.description || `Explore study opportunities in ${country.name}.`}
-                backgroundImage={flagUrl || country.imageUrl}
+                title={
+                    <>
+                        Study in <HighlightCircle color="var(--accent)">{country.name}</HighlightCircle>
+                        {flagUrl && flagUrl.startsWith('http') ? (
+                            <img src={flagUrl} alt={`${country.name} flag`} className="w-12 h-8 md:w-20 md:h-12 rounded-lg shadow-2xl object-cover inline-block ml-4 border-2 border-white/20" />
+                        ) : null}
+                    </>
+                }
+                subtitle={country.description || `Explore world-class education and career opportunities in ${country.name} with Cambry's expert guidance.`}
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+                mainImage={country.imageUrl || flagUrl}
                 backgroundAlt={country.name}
                 cta={{ label: "Start Your Application", href: "/contact" }}
+                isSplit={true}
+                stats={["students", "success", "scholarship"]}
             />
 
             {/* 2. Trust */}

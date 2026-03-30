@@ -7,6 +7,7 @@ import TrustBanner from "@/components/TrustBanner";
 import UniversityMarquee from "@/components/UniversityMarquee";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 import { getTopUniversities } from "@/actions/universities";
 import { getCountries } from "@/actions/countries";
 import { getFaqs } from "@/actions/faqs";
@@ -70,11 +71,14 @@ export default async function ServicesPage() {
             <PageHero
                 badge="End-to-End Support"
                 badgeIcon={Globe}
-                title={<>Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Services</span></>}
+                title={<>Our <HighlightCircle color="var(--accent)">Services</HighlightCircle></>}
                 subtitle="Comprehensive guidance for your study abroad journey, from counseling to post-arrival."
                 backgroundImage="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800"
                 backgroundAlt="International students studying"
                 cta={{ label: "Get Started Today", href: "/contact" }}
+                isSplit={true}
+                stats={["students", "success", "scholarship"]}
             />
 
             {/* 2. Trust */}

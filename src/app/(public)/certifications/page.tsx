@@ -7,6 +7,7 @@ import PageHero from "@/components/PageHero";
 import TrustBanner from "@/components/TrustBanner";
 import UrgencyCTA from "@/components/UrgencyCTA";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/MotionWrappers";
+import { HighlightCircle } from "@/components/HeroDecoration";
 
 export const metadata: Metadata = {
     title: "Our Certifications & Accreditations | Cambry International Admission Centre",
@@ -23,10 +24,13 @@ export default async function CertificationsPage() {
             <PageHero
                 badge="Verified & Certified"
                 badgeIcon={ShieldCheck}
-                title={<>Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-300">Certifications</span></>}
+                title={<>Our <HighlightCircle color="var(--accent)">Certifications</HighlightCircle></>}
                 subtitle="Recognized and certified by leading international education bodies, ensuring you receive the highest quality guidance."
                 backgroundImage="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1920&q=80"
+                mainImage="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800"
                 backgroundAlt="Certificates and awards"
+                isSplit={true}
+                stats={["success", "partner"]}
             />
 
             {/* 2. Trust */}

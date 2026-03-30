@@ -946,14 +946,14 @@ async function main() {
             data: {
                 name: "University of Helsinki", slug: "university-of-helsinki", location: "Helsinki", tuitionEstimate: "€13,000 - €18,000/yr",
                 description: "Finland's oldest and largest academic institution focusing heavily on world-class research.",
-                imageUrl: "https://images.unsplash.com/photo-1510452399587-8d2629b3ae3e?w=800", website: "https://www.helsinki.fi/en", ranking: "115", countryId: finland.id,
+                imageUrl: "/images/unis/helsinki.png", website: "https://www.helsinki.fi/en", ranking: "115", countryId: finland.id,
             },
         }),
         prisma.university.create({
             data: {
                 name: "Aalto University", slug: "aalto-university", location: "Espoo", tuitionEstimate: "€12,000 - €15,000/yr",
                 description: "A multidisciplinary community of bold thinkers where science and art meet technology and business.",
-                imageUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800", website: "https://www.aalto.fi/en", ranking: "109", countryId: finland.id,
+                imageUrl: "/images/unis/aalto.png", website: "https://www.aalto.fi/en", ranking: "109", countryId: finland.id,
             },
         }),
     ]);
